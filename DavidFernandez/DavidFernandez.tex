@@ -1,0 +1,236 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{David}{Fern\'andez}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{}{Glasgow}{United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{david@davidfm.es}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{davefm}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%\section{}
+%I am a highly motivated and passionate person, always trying to learn something new that will make me grow as a person and an IT professional.\\~\\
+%In my current role at CGI's Open Digital Services centre I have been involved in many different activities on a big
+%range of very different projects. Among others, I feel particularly proud about having successfully designed, implemented
+%and managed and in-house air-gapped development environment used for a secure project;
+%designing, implementing and rolled out an LDAP based solution used as a same sign-on system for the centre's self-hosted services and being part of the
+%team that successfully prepared the Glasgow office for its first ISO27001 contributing towards the specification of
+%procedures for backups, logging, user management and business continuity.
+%Introducing Jenkins Pipelines (Jenkins jobs as code) to the Centre is something I feel particularly proud of as well.
+%\\~\\
+%My previous role as an Operation Developer for Ingresso Group involved being the only technical person in the Belfast office.
+%I provided support to the Operations team and also worked on development with the other members of the Technology team, based in London.
+%Mainly I wrote software tools for internal use, automating processes that until that time were done by hand. I also set up new deals and
+%products on the company's backend systems and pulled information from the database to generate reports. My proudest moment was when, as its
+%technology partner, we managed to support Amazon when they launched their West End ticket sales service.
+%\\~\\
+%My first role outside the University was as a Software Engineer for Nokia Networks in Finland. My responsabilities
+%included taking over from an external supplier, developing new functionalities, fixing bugs, supporting the pilot users,
+%administrating the database and Linux servers and configuring the hardware security modules. The result of this was the
+%successful completion of an internal software integrity/security project and it helped me gain an understanding I did not
+%have before about software security.
+
+\section{Experience}
+\cventry{October 2015--present}{Leading Engineer/DevOps Engineer}{CGI}{Glasgow, UK}{}{
+Experience including, but not exclusive of the following:%
+\begin{itemize}
+    \item Administration of Linux servers (CentOS / RHEL / Ubuntu), Backups, Application monitoring.
+    \item Extensive use of Docker to build and deploy application code.
+    \item Extensive use of Jenkins to provide continues integration and deployment.
+    \item Automated server provisioning on Microsoft Azure Cloud using Terraform.
+    \item Automated server configuration using Ansible and Puppet.
+    \item Use of VMware ESXi for in-house virtualization.
+    \item Supporting development team and management with daily tasks/issues.
+    \item Extensive use of Git and self-hosted GitLab instances to store and manage infrastructure code.
+    \item Use of Elasticsearch, Logstash and Kibana for centralized logging and analytics.
+    \item Server incident resolution.
+    \item Support clients moving towards an "automated culture". Moving from manual processes to fully automated builds, tests and deployments.
+    \item Agile methodologies - SCRUM.
+\end{itemize}
+}
+\cventry{March 2014--October 2015}{Operations Developer}{Ingresso Group}{Belfast, UK}{}{
+Experience including, but not exclusive of the following:%
+\begin{itemize}
+    \item Extensive use of Python and Django for development of tools for internal use.
+    \item Extensive use of MySQL databases to set up new products, deals and prepare reports.
+    \item Use of FreeBSD servers to deploy applications.
+    \item Support to non-technical people with daily tasks/issues.
+\end{itemize}
+}
+\cventry{September 2012--February 2013}{Software Engineer}{Nokia Networks}{Espoo, Finland}{}{
+Experience including, but not exclusive of the following:%
+\begin{itemize}
+\item Extensive use of Java and Spring for development.
+\item Administration of Linux servers (RHEL) and databases (MySQL).
+\item Configuration of hardware security modules.
+\item Agile methodologies - SCRUM.
+\end{itemize}
+}
+\newpage
+\section{Computer skills}
+\cvdoubleitem{Languages}{Java, Python, Groovy, \LaTeX, CLISP}{Configuration Management}{Ansible, Puppet}
+\cvdoubleitem{Server Provisioning}{Terraform} {Cloud Platforms} {Microsoft Azure}
+\cvdoubleitem{Linux Containers}{Docker} {Virtualization}{VMware, Vagrant}
+\cvdoubleitem{Continuous Integration} {Jenkins}{Version Control}{Git, SVN}
+\cvdoubleitem{Log management} {ELK stack (Elasticsearch, Logstash, Kibana)}{Databases}{MySQL, Oracle, MongoDB}
+\cvdoubleitem{Operating Systems}{Debian, Ubuntu, CentOS, RHEL, FreeBSD, Windows, MacOS} {Directories} {LDAP}
+\cvdoubleitem{Servers} {Apache, Tomcat, IBM Websphere} {Integration Platforms} {JBoss Fuse}
+\cvdoubleitem{Issue Tracking / project management}{JIRA, Asana, Pivotal Tracker} {Wiki}{Confluence}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Fluent}{CEFRL: C2}
+
+\section{Education}
+\cventry{2015--2013}{BSc + MSc Computer Science}{Universidad Europea de Madrid}{Villaviciosa de Od\'on, Madrid, Spain}{}{
+\begin{itemize}
+    \item 5-year degree. Equivalent to Bachelor's + Master's Degree.
+    \item Activities:
+\begin{itemize}
+    \item Head of the University's Linux User Group
+    \item Organiser and speaker at several conferences
+    \item Member of the team who represented the University at the IT Seminar 2011 in Copenhagen.This was an international week during which three Universities (from Finland, Denmark and Spain) prepared and worked together on different topics. Our topic of choice was robotics.
+\end{itemize}
+\end{itemize}
+}  % arguments 3 to 6 can be left empty
+\cventry{2005--2013}{BSc Business Administration}{Universidad Europea de Madrid}{Villaviciosa de Od\'on, Madrid, Spain}{}{4-year degree.}
+\cventry{2012--2013}{Guest Studies, Communications Engineering / Space Technology}{Aalto University}{Espoo, Finland}{}{
+\begin{itemize}
+    \item Department of Radio Science and Engineering
+    \item Guest studies during which I worked on my Master's Thesis
+\end{itemize}
+}
+\cventry{2011--2012}{ERASMUS, Business IT}{Haaga-Helia University of Applied Sciences}{Helsinki, Finland}{}{Two semesters on an Erasmus scholarship.}
+\newpage
+\section{Master's Thesis}
+\cvitem{title}{\emph{Development of the calibration and limit checking modules for a satellite's ground control software}}
+\cvitem{supervisor}{D.Sc. (Tech.) Jaan Praks}
+\cvitem{description}{The goal of the project has been to develop the calibration and limit checking modules for
+Hummingbird, an open source software platform for controlling ground stations and satellites. At the time, this
+platform was being used by Estonia's first satellite, ESTCube-1, and planned to be used used by Finland's first satellite, Aalto-1.
+}
+
+\section{Volunteering}
+\cventry{2014--present}{Translator/Guide}{Interceltic Festival of Avil\'es}{Avil\'es, Asturias, Spain}{}{The Interceltic Festival of Avil\'es (FIA) is a summer arts festival held annually in Avil\'es, and the surrounding area in Asturias, Spain since 1997. The festival is held to promote the cultural traditions, and developments, of the Celtic nations, especially music and dance, as well as painting, photography, theatre, sculpture, traditional craftsmanship, sport and gastronomy. It is organized by the Cultural Association Esbardu, located in Avil\'es.
+\newline \newline I volunteer as a guide and translator for the groups that visit us, sorting out any kind of problems they might have during their stay.}
+
+\section{Interests}
+\cvitem{Music} {I play the piano, the whistle and the accordion. I particularly enjoy playing traditional music and can be found in jam sessions in the Glasgow area.}
+\cvitem{Cycling}{I cycle to work everyday and go out with my bike as often as possible.I cycle to work everyday and go out with my bike as often as possible.}
+\cvitem{Basketball}{I played basketball for 10 years. It is THE sport for me.}
+\cvitem{Reading}{I read almost everything I can get my hands on.}
+\cvitem{Games}{Both videogames and board games.}
+
+
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%%-----       letter       ---------------------------------------------------------
+%%% recipient data
+%%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%%\date{January 01, 1984}
+%%\opening{Dear Sir or Madam,}
+%%\closing{Yours faithfully,}
+%%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%%\makelettertitle
+%%
+%%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%%
+%%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%%
+%%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%%
+%%Albert Einstein discovered that $e=mc^2$ in 1905.
+%%
+%%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
